@@ -57,7 +57,7 @@ bot.dialog('/', function (session) {
     var extractedUrl = extractUrl(session.message);
 
     if (extractedUrl === "") {
-        session.send("Hey!  My name is OCRBotFork.  Gimme your dank meme image links and I'll look for words.");
+        session.send("Hey!  My name is DankImageMemeBot.  Gimme your dank meme image links and I'll look for words.");
     }
 
     readImageText(extractedUrl, function (error, response, body) {
